@@ -196,9 +196,8 @@ h3 {
 /* Moblie View */
 @media (max-width: 768px) {
   body {
-    background-size: 200%;
+    background-size: 200% 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
     color: white;
   }
