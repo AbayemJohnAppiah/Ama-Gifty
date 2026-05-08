@@ -9,6 +9,7 @@ body {
   background-image: url('IMG_0087.jpg');
   background-size: 100%;
   background-position: center center;
+  background-attachment: fixed;
   color: white;
 }
 
