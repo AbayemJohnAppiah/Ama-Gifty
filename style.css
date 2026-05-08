@@ -8,7 +8,6 @@
 body {
   background-image: url('IMG_0087.jpg');
   background-size: 100%;
-  background-attachment: fixed;
   background-position: center center;
   color: white;
 }
@@ -199,6 +198,9 @@ h3 {
   body {
     background-size: 200%;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: white;
   }
 
   .marquee-content {
