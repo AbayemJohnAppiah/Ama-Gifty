@@ -1,0 +1,265 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: url('IMG_0087.jpg');
+  background-size: 100%;
+  background-attachment: fixed;
+  background-position: center center;
+  color: white;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  padding-bottom: 50px;
+  height: 100%;
+}
+
+marquee {
+  font-size: 40px;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 5%;
+  width: 100vh;
+}
+
+/* Profile Container */
+.profile-container {
+  margin-top: 5%;
+}
+
+.pic-contanier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-Pic {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  border: 5px solid black;
+}
+
+.username-container {
+  margin: 10px 0;
+}
+
+.username {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.infor p {
+  font-size: 19px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.emoji {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Content */
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.content a {
+  width: 200px;
+  height: 250px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 1);
+  padding: 0 5px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+}
+
+.content a img {
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+#telegram {
+  background-color: rgb(0, 102, 255);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#whatsApp {
+  background-color: white;
+}
+
+#youTube {
+  background-color: white;
+}
+
+#tiktok {
+  background-color: white;
+}
+
+#instagram {
+  background-color: white;
+}
+
+#linkedin {
+  background-color: white;
+}
+
+h3 {
+  position: relative;
+  top: -30px;
+  left: -15px;
+  font-size: 16px;
+  color: black;
+}
+
+.title5 {
+  width: 150px;
+  left: -15px;
+  top: -45px;
+}
+
+.title6 {
+  width: 150px;
+  top: -45px;
+}
+
+.title-container {
+  text-align: center;
+  padding: 0 40px;
+}
+
+/* Animation */
+.anim {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 0.5s linear forwards;
+}
+
+.username {
+  animation-delay: 0.1s;
+}
+
+.infor,
+.emoji {
+  animation-delay: 0.2s;
+}
+
+.content {
+  animation-delay: 0.4s;
+}
+
+@keyframes moveup {
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* Moblie View */
+@media (max-width: 768px) {
+  marquee {
+    font-size: 30px;
+    width: 45vh;
+  }
+
+  .profile-Pic {
+    width: 250px;
+    height: 250px;
+    border: 3px solid black;
+  }
+
+  .username {
+    font-size: 30px;
+  }
+
+  .infor {
+    padding: 0 5px;
+  }
+
+  .infor p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  /* Content */
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .content a {
+    width: 170px;
+    height: 220px;
+  }
+
+  .content a img {
+    width: 170px;
+    height: 170px;
+    border-radius: 15px;
+  }
+
+  h3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 16px;
+    color: black;
+  }
+
+  #title {
+    width: 150px;
+    left: 0px;
+    top: 0px;
+  }
+
+  .title1 {
+    top: 190px;
+    left: 15px;
+  }
+
+  .title2 {
+    top: 190px;
+    left: 220px;
+  }
+
+  .title3 {
+    top: 420px;
+    left: 35px;
+  }
+
+  .title4 {
+    top: 420px;
+    left: 205px;
+  }
+
+  .title5 {
+    top: 645px;
+    left: 7px;
+  }
+
+  .title6 {
+    top: 645px;
+    left: 195px;
+  }
+}
