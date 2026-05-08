@@ -197,11 +197,13 @@ h3 {
 /* Moblie View */
 @media (max-width: 768px) {
   body {
-    background-size: 200% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: scroll;
     color: white;
   }
+
 
   .marquee-content {
     font-size: 30px;
